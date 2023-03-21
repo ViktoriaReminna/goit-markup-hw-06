@@ -407,6 +407,10 @@ width: 168px;
 .footer-logo {
     color: var(--light-color);
 }
+.footer-form-input {
+   
+        height: 40px;
+}
 .footer-text {
     font-weight: 400;
     font-size: 16px;
@@ -417,9 +421,10 @@ width: 168px;
 }
 .footer-social {
     margin-left: 120px;
+    margin-right: 80px;
 }
 .footer-social-subtitle {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -458,10 +463,10 @@ width: 168px;
     fill: currentColor;
 }  
 .content2 {
-    display: flex;
+
 }
 .footer-form {
-    
+    display: flex;
     
 }
 .footer-form-input {
@@ -470,34 +475,46 @@ width: 168px;
     border-radius: 4px;
     background-color: transparent;
 
-    min-width: 232px;
+
+    
     padding: 8px 16px;
 }
 
+
 .subscribe-btn  {
     
- 
+ display: inline-flex;
+ height: 40px;
     justify-content: center;
     align-items: center;
        border-radius: 4px;
     background-color: var(--primary-brand-color);
     border: 1px solid var(--primary-brand-color);
     color: #fff;
+    border-style: none;
     padding: 8px 24px;
     margin-left: 24px;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #fff;
         transition: border-color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-.footer-form-text {
-    font-weight: 500;
+.subscribe-btn:hover,  .subscribe-btn:focus {
+    background: var(--hov-focus-color);
+    border-color: 1px solid var(--hov-focus-color);
+
+}
+/* .footer-form-text { */
+    .footer-form-label span {
+        display: block;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
+        margin-bottom: 16px;
+        
 
 }
 .footer-button-icon {
@@ -505,10 +522,7 @@ width: 168px;
     fill: #fff;
 
 }
-.footer-form1 {
-   
-    margin-top: 16px;
-}
+
 /* -------------------------portfolio----------------- */
 /* --------Main--------- */
 .main {
@@ -761,29 +775,12 @@ position: absolute;
         cursor: pointer;
         outline: transparent;
         margin-right: 8px;
-        display:inline-block;
+        display:inline-flex;
         align-items: center;
         justify-content: center;
+    transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
-.modal-form-check-icon {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    position: absolute;
-    width: 16px;
-        height: 16px;
-        border: 1px solid #2E2F42;
-        border-radius: 2px;
-        cursor: pointer;
-        outline: transparent;
-        margin-right: 8px;
-        display:inline-block;
-        align-items: center;
-        justify-content: center;
-    
-}
 .modal-form-check:checked + .form-check-checkbox {
 
     background-color: var(--hov-focus-color);
@@ -806,4 +803,7 @@ position: absolute;
  transition: background-color 250ms var(--timing-function);
 
  }
- 
+ .form-btn:hover {
+     background: var(--hov-focus-color);
+
+ }
